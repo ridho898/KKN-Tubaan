@@ -216,7 +216,7 @@
 		<div class="container">
 			<div class="section-title text-center">
                 <h3>Gallery</h3>
-                <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.<br> Sed a tellus quis mi rhoncus dignissim.</p>
+                <p class="lead"></p>
             </div><!-- end title -->
 			
 			<div class="gallery-menu row">
@@ -279,8 +279,8 @@
         <div class="container">
             <div class="footer-distributed">
                 <div class="footer-left">                    
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="guest/#">Elpolitic</a> Design By : 
-					<a href="guest/https://html.design/">html design</a></p>
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="guest/#">Tubaan</a> Design By : 
+					<a href="guest/https://html.design/">RidhoVision</a></p>
                 </div>
 
                 <div class="footer-right">

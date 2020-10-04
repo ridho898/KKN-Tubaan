@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 use App\Admin;
 use App\Berita;
 use App\Banner;
-use Illuminate\Support\Facades\Auth;
+use App\Kegiatan;
+use App\Gallery;
+// use Illuminate\Support\Facades\Auth;
 use \Illuminate\Support\Str;
 
 class HomeController extends Controller
@@ -16,10 +18,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
@@ -29,9 +31,11 @@ class HomeController extends Controller
     public function index()
     {
         $jmlberita = Berita::count();
-        $jmladmin = Admin::count();        
+        $jmladmin = Admin::count();    
+        $jmlkegiatan = Kegiatan::count();
+        $jmlgallery = Gallery::count();
         $berita = Berita::paginate(15);        
         // $berita = str_limit($berita,100);
-        return view('home',compact('jmlberita','jmladmin','berita'));        
+        return view('home',compact('jmlberita','jmladmin', 'jmlkegiatan', 'jmlgallery','berita'));        
     }
 }
